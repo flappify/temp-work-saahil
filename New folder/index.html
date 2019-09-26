@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form id="contact" name="contact" onsubmit="return validateFormOnSubmit(this)" onKeyPress="if (event.which == 13) return false;" action="" method="POST">
+        <input type="file" value="upload" accept="image/*" id="uploadbutton"/>
+        <input type="text" id="name" />
+        <button type="submit" id="submit">SUBMIT</button>
+    </form>
+    <img src="#" id="upimage"/>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-storage.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

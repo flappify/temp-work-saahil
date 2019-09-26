@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>MAKE YOUR PROFILE</h1>
+            <h2>This information will let us know more about you</h2>
+        </div>
+        <div>
+            <h1>ABOUT</h1>
+            <h1>DOCUMENTS</h1>
+            <h1>TERMS & CONDITIONS</h1>
+        </div>
+        <div class="about">
+            <form>
+                <div>
+                    <img id="profile-pic" src="logo.png" alt="your image" />
+                    <input type='file' accept="image/*" onchange="profileURL(this);" />
+                </div>
+                <div>
+                    <div>
+                        <p>Full name</p>
+                        <input type="text" class="input-item" name="name" id="name" tabindex="1"/>
+                        <div id="name-error" class="error"></div>
+                    </div>
+                    <div>
+                        <p>Email</p>
+                        <input type="email" class="input-item" name="email" id="email" tabindex="4"/>
+                        <div id="email-error" class="error"></div>
+                    </div>
+                    <div>
+                        <p>Contact Number</p>
+                        <input type="text" class="input-item" name="phone" id="phone" tabindex="4"/>
+                        <div id="phone-error" class="error"></div>
+                    </div>
+                    <div>
+                        <p>Current Address</p>
+                        <input type="text" class="input-item" name="curr-address" id="curr-address" tabindex="2"/>
+                        <div id="curr-address-error" class="error"></div>
+                    </div>
+                    <div>
+                        <p>Date of Birth</p>
+                        <input type="date" class="input-item" name="date" id="date" tabindex="3"/>
+                        <div id="date-error" class="error"></div>
+                    </div>
+                    <div>
+                        <p>GENDER</p>
+                        <select>
+                            <option>MALE</option>
+                            <option>FEMALE</option>
+                        </select>
+                        <div id="gender-error" class="error"></div>
+                    </div>
+                    <div>
+                        <p>AGE</p>
+                        <input type="number" class="input-item" name="age" id="age" tabindex="4"/>
+                        <div id="age-error" class="error"></div>
+                    </div>
+                    <div>
+                        <p>Father's Name</p>
+                        <input type="text" class="input-item" name="fname" id="fname" tabindex="4"/>
+                        <div id="fname-error" class="error"></div>
+                    </div>
+                    <div>
+                        <p>Mother's Name</p>
+                        <input type="text" class="input-item" name="mname" id="mname" tabindex="4"/>
+                        <div id="mname-error" class="error"></div>
+                    </div>
+                    <div>
+                        <p>Permanent Address</p>
+                        <input type="checkbox" name="same-curr-add" >Same as current address<br><br>
+                        <input type="text" class="input-item" name="per-address" id="per-address" tabindex="2"/>
+                        <div id="per-address-error" class="error"></div>
+                    </div>
+                    <div>
+                        <p>Qualification</p>
+                        <input type="text" class="input-item" name="qualification" id="qualification" tabindex="4"/>
+                        <div id="qualification-error" class="error"></div>
+                    </div>
+                    <div>
+                        <p>Profession</p>
+                        <input type="text" class="input-item" name="profession" id="profession" tabindex="4"/>
+                        <div id="profession-error" class="error"></div>
+                    </div>
+                    <div>
+                        <p>Membership Duration</p>
+                        <select>
+                            <option>1 Month</option>
+                            <option>3 Month</option>
+                            <option>6 Month</option>
+                            <option>1Year</option>
+                        </select>
+                        <div id="mdur-error" class="error"></div>
+                    </div>
+                    <div>
+                        <p>Membership Fees</p>
+                        <input type="number" class="input-item" name="mfees" id="mfees" tabindex="4"/>
+                        <div id="mfees-error" class="error"></div>
+                    </div>
+                    <div>
+                        <p>Reference</p>
+                        <input type="text" class="input-item" name="ref" id="ref" tabindex="4"/>
+                        <div id="ref-error" class="error"></div>
+                    </div>
+                    <div>
+                        <img id="docreq" src="logo.png" alt="your image" />
+                        <p>Document Type</p>
+                        <select>
+                            <option>Voter ID Card</option>
+                            <option>Driving Licence</option>
+                            <option>Passport</option>
+                            <option>Aadhar Card</option>
+                            <option>School/College ID Card</option>
+                        </select>
+                        <input type='file' accept="image/*" onchange="docreqURL(this);" />
+                    </div>
+                    <div>
+                        <h1>TERMS AND CONDITIONS</h1>
+                        <p>1.For all AIEF,National/State/Patrons holder the new membership of above mentioned organization one has membership fees and donation as per own capacity and requirement of the organization for spread and promotion of the AIEF.</p>
+                        <p>2.All AIEF Executive member the new membership charge is ₹​ 200 only.</p>
+                        <p>3.All AIEF post holder member the new membership charge is ₹​ 1500 only</p>
+                        <p>4.If any member of the office bearer of our organization is found guilty of being involved in illegal activities, cheating, duping or misuse of his ID card including the name of the organization, our organization AIEF will take no responsibility for that, the administration is free to take legal action against him/her.</p>
+                    </div>
+                    <div>
+                        <p>Date:-<span id="curr-time"></span></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="signup.js"></script>
+</body>
+</html>
