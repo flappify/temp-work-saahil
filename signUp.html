@@ -18,7 +18,7 @@
             <h1>TERMS & CONDITIONS</h1>
         </div>
         <div class="about">
-            <form>
+            <form id="signup" name="contact" onsubmit="return validateSignUpSubmit(this)" onKeyPress="if (event.which == 13) return false;" action="" method="GET">
                 <div>
                     <img id="profile-pic" src="logo.png" alt="your image" />
                     <input type='file' accept="image/*" onchange="profileURL(this);" />
@@ -46,7 +46,7 @@
                     </div>
                     <div>
                         <p>Date of Birth</p>
-                        <input type="date" class="input-item" name="date" id="date" tabindex="3"/>
+                        <input type="date" class="input-item" name="dob" id="dob" tabindex="3"/>
                         <div id="date-error" class="error"></div>
                     </div>
                     <div>
@@ -130,14 +130,15 @@
                     <div>
                         <p>Date:-<span id="curr-time"></span></p>
                     </div>
+                    <div>
+                        <button type="submit">SUBMIT</button>
+                    </div>
+
                 </div>
             </form>
         </div>
     </div>
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="signup.js"></script>
 </body>
 </html>
